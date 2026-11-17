@@ -56,6 +56,26 @@ header.scrolled{background:rgba(251,252,253,.88);box-shadow:0 8px 30px rgba(23,7
 .hero-photo-slot{display:block;padding:12px;overflow:visible}
 .hero-real-photo{position:relative;z-index:1;width:100%;height:100%;display:block;object-fit:cover;object-position:center 42%;border-radius:170px 170px 24px 24px;box-shadow:0 10px 26px rgba(23,77,120,.10)}
 @media(max-width:560px){.hero-photo-slot{padding:9px}.hero-real-photo{border-radius:140px 140px 20px 20px}}
+
+/* Entrada animada e rotação dos ícones das redes sociais */
+@keyframes social-pop-in {
+  0% { opacity: 0; transform: scale(.25) rotate(-180deg); }
+  70% { opacity: 1; transform: scale(1.12) rotate(12deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+.header-social, .social-link {
+  animation: social-pop-in .85s cubic-bezier(.2,.8,.2,1) both;
+}
+.header-social:nth-child(2), .social-link:nth-child(2) { animation-delay: .18s; }
+.header-social:hover, .social-link:hover {
+  transform: translateY(-3px) rotate(360deg) scale(1.08);
+  transition: transform .65s cubic-bezier(.2,.8,.2,1), box-shadow .3s, background .3s, border-color .3s;
+}
+.social-link:hover { transform: translateY(-4px) rotate(360deg) scale(1.1); }
+@media (prefers-reduced-motion: reduce) {
+  .header-social, .social-link { animation: none; }
+}
+
 </style></head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="#inicio" aria-label="ONG Portal Saúde — início"><img class="brand-logo" src="assets/fotos/Code_Generated_Image.png" alt="Portal Saúde — Informação que faz bem!"></a><nav class="links" id="links"><a href="#inicio">Início</a><a href="#sobre">Quem somos</a><a href="#atuacao">Atuação</a><a href="#quando-procurar">Quando procurar</a><a class="mobile-contact" href="https://wa.me/5511999056373" target="_blank" rel="noopener">Fale conosco pelo WhatsApp ↗</a></nav><div class="header-socials" aria-label="Redes sociais oficiais"><a class="header-social facebook" href="https://www.facebook.com/OngPortalSaude/?locale=pt_BR" target="_blank" rel="noopener noreferrer" aria-label="Facebook oficial da ONG Portal Saúde" title="Facebook"><img src="https://cdn.simpleicons.org/facebook/1877F2" alt=""></a><a class="header-social instagram" href="https://www.instagram.com/ongportalsaude/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial da ONG Portal Saúde" title="Instagram"><img src="https://cdn.simpleicons.org/instagram/E4405F" alt=""></a></div><a class="btn primary" href="https://wa.me/5511999056373" target="_blank" rel="noopener">Fale conosco ↗</a><button class="menu" id="menu" type="button" aria-label="Abrir menu" aria-controls="links" aria-expanded="false">☰</button></div></header>
