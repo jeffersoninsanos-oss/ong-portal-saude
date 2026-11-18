@@ -147,3 +147,7 @@ document.getElementById('year').textContent=new Date().getFullYear();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
 window.addEventListener('scroll',()=>document.querySelector('header')?.classList.toggle('scrolled',window.scrollY>12),{passive:true});
 </script></body></html>
+/* Centraliza os símbolos e os títulos dos cartões da seção Frentes de atuação */
+#especialidades .cards .card{display:flex;flex-direction:column;align-items:center;text-align:center}
+#especialidades .cards .card .ico{margin:0 auto 20px}
+#especialidades .cards .card h3{width:100%;text-align:center}
