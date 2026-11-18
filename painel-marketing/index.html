@@ -99,45 +99,117 @@ body{background:#f3f6fc}
 @media(max-width:1000px){.content{padding:22px}.main{margin-left:276px;width:calc(100% - 276px)}}
 @media(max-width:700px){.main{margin:0;width:100%}.content{padding:17px 13px}.topbar{padding:0 16px}.hero{padding:17px;min-height:120px}.hero-logo{width:65px;height:65px;flex-basis:65px;border-radius:17px}.hero-logo img{width:57px;height:57px}.hero-copy h1{font-size:18px}.stats .card{min-height:124px;padding:15px}.stats .statvalue{font-size:25px}}
 
+
+/* Layout alinhado à referência visual enviada */
+:root{--navy:#06275d;--blue:#0868e8;--green:#08a85a;--ink:#09265d;--muted:#637895;--line:#e2eaf7;--bg:#f5f8ff}
+body{background:#f5f8ff;color:var(--ink)}
+.sidebar{width:290px;background:linear-gradient(180deg,#06285f,#05265b 72%,#073a78);padding:25px 16px}
+.main{margin-left:290px;width:calc(100% - 290px)}
+.brand{padding:0 9px 25px;gap:12px}.brandmark{width:65px;height:65px;border-radius:0;background:transparent;padding:0;object-fit:contain}
+.brand strong{font-size:19px;line-height:1.15}.brand small{display:none}
+.navlabel{display:none}.nav button{font-size:14px;padding:13px 14px;margin:4px 0;border-radius:11px;gap:13px}
+.nav button.active{background:linear-gradient(100deg,#0878fa,#0758d2);box-shadow:0 5px 14px #001b5040}
+.nav .ico{font-size:21px;width:24px}.sidefoot{margin:28px 2px 0;padding:15px 12px;border:1px solid #ffffff30;border-radius:12px}
+.topbar{height:84px;padding:0 28px;background:#fff;box-shadow:0 2px 12px #09265d0c}
+.topbrand{display:flex;align-items:center;gap:12px}.topbrand img{width:54px;height:54px;object-fit:contain}.topbrand strong{font:800 19px Manrope;line-height:1.05;color:#08285e}.topright{gap:18px}
+.system-ready{display:flex;align-items:center;gap:9px;color:#14934f;font-weight:700;border-right:1px solid #e2eaf3;padding-right:22px}
+.system-ready i{width:11px;height:11px;border-radius:50%;background:#16b65e;box-shadow:0 0 0 4px #e4f8eb}
+.top-action{height:42px;min-width:48px;border:0;border-left:1px solid #e8edf5;background:white;color:#08285e;font-size:21px;position:relative;cursor:pointer}
+.top-action .count{position:absolute;top:0;right:3px;background:#ef263b;color:white;border-radius:20px;font-size:10px;padding:2px 5px}
+.logout{border:1px solid #e5ebf5;border-radius:10px;padding:10px 14px;color:#09265d;background:#fff;font-weight:700;font-size:12px}
+.content{max-width:1700px;padding:12px 24px 18px}
+.hero{height:166px;min-height:166px;border:1px solid #dce9fa;border-radius:18px;margin:0 0 12px;padding:18px 24px;background:linear-gradient(105deg,#dceeff 0%,#f4f9ff 49%,#dff7e9 100%);position:relative}
+.hero:after{width:42%;height:240px;right:-3%;bottom:-154px;background:linear-gradient(120deg,#13b65d,#0873ee);opacity:1;transform:rotate(-7deg)}
+.hero-logo{width:116px;height:116px;flex-basis:116px;border-radius:50%;background:transparent;box-shadow:none}
+.hero-logo img{width:112px;height:112px}
+.hero-copy span{display:none}.hero-copy h1{font-size:34px;margin:0 0 7px;color:#08265e}.hero-copy p{font-size:17px;font-weight:700;color:#112d61}
+.hero-heart{width:230px;height:130px;background:linear-gradient(140deg,#d8f3e5,#bce9d3);border-radius:45% 25% 40% 25%;font-size:65px;color:#e92748;box-shadow:none}
+.hero-heart small{font-size:11px}
+.heading{display:none}
+.notice{margin:0 0 10px}
+.stats{gap:12px;margin-bottom:12px}
+.stats .card{min-height:106px;height:106px;padding:14px 18px;border:1px solid #e2eaf7;border-bottom:5px solid #1769f5;border-radius:16px;background:#fff;color:#09265d;box-shadow:0 3px 12px #09265d0a}
+.stats .card:nth-child(2),.stats .card:nth-child(4){border-bottom-color:#10a85a}
+.stats .statlabel,.stats .statfoot{color:#09265d}.stats .statlabel{font-size:14px;font-weight:700;padding-left:55px;min-height:36px}
+.stats .statvalue{font-size:25px;color:#09265d;margin:0 0 0 55px}
+.stats .statfoot{display:none}.stats .staticon{float:left;position:absolute;width:48px;height:48px;border-radius:50%;font-size:23px;background:#e8f2ff;color:#0868e8}
+.stats .card:nth-child(2) .staticon,.stats .card:nth-child(4) .staticon{background:#e5f8ec;color:#08a85a}
+.dashboard-grid{grid-template-columns:1.65fr 1fr;gap:14px;margin-bottom:10px}
+.dashboard-grid .card{padding:16px 18px;border-radius:16px;box-shadow:0 3px 13px #09265d0b}
+.dash-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.dash-title h3{font-size:17px}.chart-legend{display:flex;gap:18px;justify-content:center;font-size:11px;font-weight:600;margin:7px 0}
+.legend-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.chart-svg{width:100%;height:190px;display:block;overflow:visible}
+.activity-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-top:1px solid #edf1f7}
+.activity-icon{width:43px;height:43px;border-radius:12px;background:#e7f1ff;color:#0870e8;display:grid;place-items:center;font-size:20px;flex:0 0 43px}
+.activity-row:nth-child(2) .activity-icon{background:#e6f8ed;color:#08a85a}
+.activity-row:nth-child(3) .activity-icon{background:#e9f1ff;color:#1769e8}
+.activity-row:nth-child(4) .activity-icon{background:#f0eaff;color:#8054ed}
+.activity-row strong{font-size:12px}.activity-row small{display:block;color:#667995;font-size:11px;margin-top:4px}
+.quick-title{font:800 17px Manrope;margin:0 0 10px}
+.quick-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.quick-item{min-height:84px;border:1px solid #d8e6fa;border-radius:12px;background:#e9f2ff;color:#0868e8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;font-weight:700;font-size:11px}
+.quick-item:nth-child(even){background:#e7f8ed;color:#08a85a;border-color:#d2f0dd}
+.bottom-brand{display:flex;justify-content:space-between;align-items:center;padding:12px 10px 0;color:#0a367d;font-weight:700}
+.bottom-brand .motto{font:italic 700 24px Manrope;color:#064a9c}
+@media(max-width:1100px){.sidebar{width:250px}.main{margin-left:250px;width:calc(100% - 250px)}.dashboard-grid{grid-template-columns:1fr}.hero-heart{width:150px}}
+@media(max-width:700px){.sidebar{width:275px}.main{margin:0;width:100%}.topbar{height:68px;padding:0 12px}.topbrand img{width:40px;height:40px}.topbrand strong{font-size:14px}.system-ready{display:none}.top-action{min-width:35px;font-size:17px}.logout{padding:8px;font-size:10px}.content{padding:12px}.hero{height:auto;min-height:125px;padding:14px;gap:10px}.hero-logo{width:58px;height:58px;flex-basis:58px}.hero-logo img{width:58px;height:58px}.hero-copy h1{font-size:20px}.hero-copy p{font-size:11px}.hero-heart{display:none}.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.stats .card{height:100px;min-height:100px;padding:12px}.stats .statlabel{font-size:11px;padding-left:43px}.stats .statvalue{margin-left:43px}.stats .staticon{width:36px;height:36px;font-size:18px}.dashboard-grid{grid-template-columns:1fr}.chart-svg{height:155px}.quick-grid{grid-template-columns:repeat(2,1fr)}.bottom-brand{display:none}}
 </style></head>
 <body><div class="shell">
 <aside class="sidebar" id="sidebar"><div class="brand"><img class="brandmark" src="../assets/fotos/Code_Generated_Image.png" alt="Logo ONG Portal Saúde"><div><strong>PORTAL SAÚDE</strong><small>Central de Marketing</small></div></div>
 <nav class="nav">
-<div class="navlabel">VISÃO GERAL</div>
-<button class="active" data-page="overview"><span class="ico">▦</span> Visão geral</button>
-<div class="navlabel">RELACIONAMENTO</div>
-<button data-page="contacts"><span class="ico">♙</span> Contatos e captação</button>
-<button data-page="search"><span class="ico">⌕</span> Busca de contatos</button>
-<button data-page="email"><span class="ico">✉</span> E-mail marketing</button>
-<div class="navlabel">COMUNICAÇÃO</div>
-<button data-page="social"><span class="ico">◎</span> Redes sociais</button>
-<button data-page="content"><span class="ico">▤</span> Planejamento de conteúdo</button>
-<div class="navlabel">ANÁLISE E SISTEMA</div>
-<button data-page="google"><span class="ico">◉</span> Google e estatísticas</button>
+<button class="active" data-page="overview"><span class="ico">⌂</span> Dashboard</button>
+<button data-page="contacts"><span class="ico">♟</span> Contatos e Captação</button>
+<button data-page="search"><span class="ico">⌕</span> Busca de Contatos</button>
+<button data-page="email"><span class="ico">✉</span> E-mail Marketing</button>
+<button data-page="content"><span class="ico">▦</span> Planejamento de Conteúdo</button>
+<button data-page="social"><span class="ico">♧</span> Redes Sociais</button>
+<button data-page="google"><span class="ico">G</span> Google e Estatísticas</button>
 <button data-page="reports"><span class="ico">▥</span> Relatórios</button>
-<button data-page="integrations"><span class="ico">⌘</span> Integrações</button>
 <button data-page="settings"><span class="ico">⚙</span> Configurações</button>
-</nav><div class="sidefoot">ONG Portal Saúde<br>Ambiente administrativo<br><span style="color:#83c9bd">● Protótipo em preparação</span></div></aside>
-<main class="main"><header class="topbar"><div style="display:flex;align-items:center;gap:12px"><button class="mobilemenu" id="mobilemenu">☰</button><span class="crumb" id="crumb">Painel de Marketing · ONG Portal Saúde</span></div><div class="topright"><span>Ambiente de preparação · sem integrações ativas</span><div class="avatar">PS</div></div></header>
+</nav><div class="sidefoot">🛡️ &nbsp; LGPD em conformidade<br><span style="color:#c1d5f2">Seus dados protegidos</span></div></aside>
+<main class="main"><header class="topbar"><div style="display:flex;align-items:center;gap:18px"><button class="mobilemenu" id="mobilemenu">☰</button><div class="topbrand"><img src="../assets/fotos/Code_Generated_Image.png" alt="Logo ONG Portal Saúde"><strong>ONG<br>Portal Saúde</strong></div></div><div class="topright"><div class="system-ready"><i></i><span>Sistema Pronto<br><small style="font-weight:500;color:#62758f">Painel de Marketing</small></span></div><button class="top-action" aria-label="Notificações">♧<span class="count">0</span></button><button class="top-action" aria-label="Configurações" onclick="document.querySelector('[data-page=settings]').click()">⚙</button><button class="logout" onclick="alert('O login será ativado na instalação segura do painel.')">⇥ &nbsp; Sair</button></div></header>
 <div class="content">
-<section class="section active" id="overview"><div class="hero"><div class="hero-logo"><img src="../assets/fotos/Code_Generated_Image.png" alt="Logo ONG Portal Saúde"></div><div class="hero-copy"><span>ONG PORTAL SAÚDE</span><h1>Juntos por uma saúde mais justa!</h1><p>Informação • Direitos • Apoio</p></div><div class="hero-heart">♥<small>Saúde e acolhimento</small></div></div><div class="heading"><div><div class="eyebrow">CENTRAL DE MARKETING</div><h1>Visão geral</h1><p class="sub">Acompanhe os módulos e organize as ações de comunicação da ONG Portal Saúde.</p></div><span class="pill amber">Dados demonstrativos</span></div>
-<div class="notice"><b>Ambiente de preparação:</b> os indicadores abaixo são exemplos visuais, não representam resultados reais. Nenhum contato será importado ou e-mail enviado antes da configuração e validação das integrações.</div>
-<div class="grid stats"><div class="card"><span class="staticon">♙</span><div class="statlabel">Contatos cadastrados</div><div class="statvalue">—</div><div class="statfoot">Aguardando banco de dados</div></div><div class="card"><span class="staticon">✉</span><div class="statlabel">Campanhas enviadas</div><div class="statvalue">—</div><div class="statfoot">Envios ainda não habilitados</div></div><div class="card"><span class="staticon">◎</span><div class="statlabel">Canais conectados</div><div class="statvalue">0/4</div><div class="statfoot">Integrações pendentes</div></div><div class="card"><span class="staticon">▤</span><div class="statlabel">Conteúdos planejados</div><div class="statvalue">—</div><div class="statfoot">Calendário ainda não configurado</div></div></div>
-<div class="grid cols" style="margin-bottom:18px">
-<div class="card"><h3>Visão de desempenho</h3><p class="hint">Painel de indicadores que será alimentado pelas integrações</p>
-<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:12px;height:150px;padding:12px 5px 0;border-bottom:1px solid #e8eef7">
-<div style="flex:1;height:42%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#8b5cf6,#c4b5fd);opacity:.88"></div><div style="flex:1;height:65%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#1769f5,#93c5fd);opacity:.88"></div><div style="flex:1;height:52%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#16b978,#a7f3d0);opacity:.88"></div><div style="flex:1;height:82%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#8b5cf6,#c4b5fd);opacity:.88"></div><div style="flex:1;height:61%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#1769f5,#93c5fd);opacity:.88"></div><div style="flex:1;height:94%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#16b978,#a7f3d0);opacity:.88"></div><div style="flex:1;height:72%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#8b5cf6,#c4b5fd);opacity:.88"></div><div style="flex:1;height:100%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#1769f5,#93c5fd);opacity:.88"></div><div style="flex:1;height:76%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#16b978,#a7f3d0);opacity:.88"></div><div style="flex:1;height:88%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#8b5cf6,#c4b5fd);opacity:.88"></div><div style="flex:1;height:59%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#1769f5,#93c5fd);opacity:.88"></div><div style="flex:1;height:91%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#16b978,#a7f3d0);opacity:.88"></div>
-</div><div style="display:flex;justify-content:space-between;color:#8392aa;font-size:10px;margin-top:9px"><span>Jan</span><span>Fev</span><span>Mar</span><span>Abr</span><span>Mai</span><span>Jun</span><span>Jul</span><span>Ago</span><span>Set</span><span>Out</span><span>Nov</span><span>Dez</span></div>
-<p class="hint" style="margin:12px 0 0">Gráfico ilustrativo — aguardando dados reais do Google e das plataformas.</p></div>
-<div class="card"><h3>Atividades recentes</h3><p class="hint">Ações e eventos do ambiente administrativo</p>
-<div class="list">
-<div class="listrow"><div><strong>Estrutura do painel preparada</strong><small>Interface e módulos iniciais</small></div><span class="pill green">Concluído</span></div>
-<div class="listrow"><div><strong>Integração Instagram / Meta</strong><small>Bot existente no cPanel</small></div><span class="pill amber">Pendente</span></div>
-<div class="listrow"><div><strong>Google Analytics e Search Console</strong><small>Conexão de métricas</small></div><span class="pill amber">Pendente</span></div>
-<div class="listrow"><div><strong>Banco de dados e autenticação</strong><small>Instalação na hospedagem</small></div><span class="pill amber">Pendente</span></div>
-</div></div></div>
-<div class="grid cols"><div class="card"><h3>Etapas para colocar o painel em funcionamento</h3><p class="hint">Acompanhe o que falta para ativar o ambiente.</p><div class="list"><div class="listrow"><div><strong>Estrutura visual e navegação</strong><small>Painel e módulos iniciais</small></div><span class="pill green">Preparado</span></div><div class="listrow"><div><strong>Hospedagem TargetHost</strong><small>Confirmar plano, PHP, MySQL e subdomínio</small></div><span class="pill amber">Pendente</span></div><div class="listrow"><div><strong>Banco de dados e acesso seguro</strong><small>Criar tabelas, login e permissões</small></div><span class="pill amber">Pendente</span></div><div class="listrow"><div><strong>Bot do Instagram e Meta</strong><small>Vincular bot existente do cPanel após configurar Meta</small></div><span class="pill amber">Pendente</span></div><div class="listrow"><div><strong>Google e serviço de e-mail</strong><small>Tokens, autorização e testes de envio</small></div><span class="pill amber">Pendente</span></div></div></div>
-<div class="card"><h3>Módulos do painel</h3><p class="hint">Estrutura prevista para a operação.</p><div class="list"><div class="listrow"><strong>Contatos e captação</strong><span class="pill blue">Preparado</span></div><div class="listrow"><strong>Busca de contatos</strong><span class="pill blue">Preparado</span></div><div class="listrow"><strong>E-mail marketing</strong><span class="pill blue">Preparado</span></div><div class="listrow"><strong>Redes sociais</strong><span class="pill amber">Integração pendente</span></div><div class="listrow"><strong>Google e relatórios</strong><span class="pill amber">Integração pendente</span></div></div></div></div></section>
+<section class="section active" id="overview">
+<div class="hero"><div class="hero-logo"><img src="../assets/fotos/Code_Generated_Image.png" alt="Logo ONG Portal Saúde"></div><div class="hero-copy"><h1>Bem-vinda, Adriana!</h1><p>ONG Portal Saúde — Informação • Direitos • Apoio</p><p style="font-style:italic;font-size:14px;margin-top:8px">Juntos por uma saúde mais justa!</p></div><div class="hero-heart">♥<small>Saúde, cuidado e acolhimento</small></div></div>
+<div class="notice"><b>Prévia do painel:</b> os números e gráficos são demonstrativos. Os dados reais aparecerão após configurar banco de dados e integrações.</div>
+<div class="grid stats">
+<div class="card"><span class="staticon">♟</span><div class="statlabel">Contatos cadastrados</div><div class="statvalue">—</div></div>
+<div class="card"><span class="staticon">✉</span><div class="statlabel">Campanhas</div><div class="statvalue">—</div></div>
+<div class="card"><span class="staticon">◖</span><div class="statlabel">Publicações</div><div class="statvalue">—</div></div>
+<div class="card"><span class="staticon">▥</span><div class="statlabel">Acessos ao site</div><div class="statvalue">—</div></div>
+</div>
+<div class="grid dashboard-grid">
+<div class="card"><div class="dash-title"><h3>▮ Dados de demonstração</h3><select aria-label="Período" style="border:1px solid #e2eaf4;border-radius:22px;padding:8px 12px;color:#09265d;background:#fff;font-size:11px"><option>Últimos 30 dias</option><option>Últimos 7 dias</option><option>Este mês</option></select></div>
+<div class="chart-legend"><span><i class="legend-dot" style="background:#1769ed"></i>Visitantes</span><span><i class="legend-dot" style="background:#13aa62"></i>Contatos</span><span><i class="legend-dot" style="background:#8b42e8"></i>Campanhas</span></div>
+<svg class="chart-svg" viewBox="0 0 760 205" role="img" aria-label="Gráfico ilustrativo de visitantes, contatos e campanhas">
+<g stroke="#e5ebf4" stroke-width="1"><path d="M55 15H744 M55 58H744 M55 101H744 M55 144H744 M55 187H744"/><path d="M55 15V187 M170 15V187 M285 15V187 M400 15V187 M515 15V187 M630 15V187 M744 15V187"/></g>
+<g fill="#314b78" font-size="11"><text x="5" y="19">1.000</text><text x="15" y="62">750</text><text x="15" y="105">500</text><text x="15" y="148">250</text><text x="31" y="191">0</text><text x="45" y="204">Seg</text><text x="160" y="204">Ter</text><text x="275" y="204">Qua</text><text x="390" y="204">Qui</text><text x="505" y="204">Sex</text><text x="620" y="204">Sáb</text><text x="730" y="204">Dom</text></g>
+<path d="M55 91 C95 82 130 66 170 66 S245 82 285 77 S360 55 400 55 S475 60 515 57 S590 43 630 39 S705 28 744 24" fill="none" stroke="#1769ed" stroke-width="3" stroke-linecap="round"/>
+<path d="M55 91 C95 82 130 66 170 66 S245 82 285 77 S360 55 400 55 S475 60 515 57 S590 43 630 39 S705 28 744 24 L744 187 L55 187Z" fill="#1769ed" opacity=".08"/>
+<path d="M55 150 C100 144 130 132 170 132 S245 145 285 142 S360 139 400 137 S475 122 515 120 S590 133 630 128 S705 105 744 99" fill="none" stroke="#13aa62" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M55 174 C100 168 130 157 170 158 S245 170 285 166 S360 161 400 160 S475 145 515 147 S590 157 630 151 S705 130 744 126" fill="none" stroke="#8b42e8" stroke-width="2.5" stroke-linecap="round"/>
+<g fill="#fff" stroke-width="2.5"><circle cx="55" cy="91" r="4" stroke="#1769ed"/><circle cx="170" cy="66" r="4" stroke="#1769ed"/><circle cx="285" cy="77" r="4" stroke="#1769ed"/><circle cx="400" cy="55" r="4" stroke="#1769ed"/><circle cx="515" cy="57" r="4" stroke="#1769ed"/><circle cx="630" cy="39" r="4" stroke="#1769ed"/><circle cx="744" cy="24" r="4" stroke="#1769ed"/></g></svg>
+<p class="hint" style="margin:5px 0 0">Gráfico ilustrativo. Métricas reais serão carregadas após conectar Google Analytics e demais canais.</p>
+</div>
+<div class="card"><div class="dash-title"><h3>◷ Atividades Recentes</h3><a href="#" onclick="document.querySelector('[data-page=reports]').click();return false" style="font-size:11px;font-weight:700;color:#1769ed">Ver todas →</a></div>
+<div class="activity-row"><div class="activity-icon">✉</div><div><strong>Nova campanha criada</strong><small>Campanha informativa sobre direitos</small></div></div>
+<div class="activity-row"><div class="activity-icon">♟</div><div><strong>Novo contato cadastrado</strong><small>Via formulário do site</small></div></div>
+<div class="activity-row"><div class="activity-icon">▤</div><div><strong>Novo conteúdo planejado</strong><small>Tema: Direitos dos Pacientes</small></div></div>
+<div class="activity-row"><div class="activity-icon">➤</div><div><strong>Relatório mensal disponível</strong><small>Acesse para ver os resultados</small></div></div>
+</div></div>
+<div class="grid dashboard-grid">
+<div class="card"><div class="quick-title">▦ Módulos Rápidos</div><div class="quick-grid">
+<button class="quick-item" onclick="document.querySelector('[data-page=contacts]').click()">♟<span>Contatos<br>e Captação</span></button>
+<button class="quick-item" onclick="document.querySelector('[data-page=email]').click()">✉<span>E-mail<br>Marketing</span></button>
+<button class="quick-item" onclick="document.querySelector('[data-page=content]').click()">◖<span>Planejamento<br>de Conteúdo</span></button>
+<button class="quick-item" onclick="document.querySelector('[data-page=reports]').click()">▥<span>Relatórios</span></button>
+<button class="quick-item" onclick="document.querySelector('[data-page=settings]').click()">⚙<span>Configurações</span></button>
+</div></div>
+<div class="card"><div class="activity-row"><div class="activity-icon">●</div><div><strong>Integrações serão configuradas após a instalação</strong><small>Bot do Instagram existente — integração Meta pendente</small></div></div><div class="activity-row"><div class="activity-icon">🔒</div><div><strong>LGPD em conformidade</strong><small>Controles de privacidade serão ativados no painel seguro</small></div></div></div>
+</div>
+<div class="bottom-brand"><span>💚 ONG Portal Saúde &nbsp; │ &nbsp; Informação • Direitos • Apoio</span><span class="motto">Juntos por uma saúde mais justa!</span></div>
+</section>
 <section class="section" id="contacts"><div class="heading"><div><div class="eyebrow">RELACIONAMENTO</div><h1>Contatos e captação</h1><p class="sub">Organização de pessoas que solicitaram informações ou autorizaram comunicações.</p></div><button class="btn primary" onclick="showForm('contactform')">+ Novo contato</button></div><div class="notice">A base real será armazenada no banco protegido da hospedagem. Este protótipo não grava dados pessoais.</div><div class="card" id="contactform" style="display:none"><h3>Novo contato (prévia do formulário)</h3><div class="formgrid"><div class="field"><label>Nome</label><input placeholder="Nome completo"></div><div class="field"><label>E-mail</label><input type="email" placeholder="email@exemplo.com"></div><div class="field"><label>Categoria</label><select><option>Selecione</option><option>Paciente / familiar</option><option>Instituição</option><option>Clínica / hospital</option><option>Associação</option><option>Empresa</option></select></div><div class="field"><label>Origem</label><select><option>Formulário do site</option><option>Cadastro manual</option><option>Importação autorizada</option></select></div></div><div class="field"><label>Registro de autorização / base legal</label><textarea placeholder="Registrar como o contato foi obtido e a justificativa para a comunicação"></textarea></div><div class="actions"><button class="btn primary" onclick="alert('Formulário demonstrativo. O cadastro será habilitado após banco de dados e controles LGPD.')">Salvar quando ativado</button><button class="btn secondary" onclick="showForm('contactform')">Fechar</button></div></div><div class="card"><h3>Base de contatos</h3><p class="hint">Os registros aparecerão aqui após a conexão do banco de dados.</p><div class="empty">Nenhum contato carregado. Banco de dados ainda não conectado.</div></div></section>
 <section class="section" id="search"><div class="heading"><div><div class="eyebrow">PROSPECÇÃO RESPONSÁVEL</div><h1>Busca e gestão de contatos</h1><p class="sub">Pesquisa de contatos institucionais em fontes públicas e organização de dados de origem.</p></div><span class="pill amber">Mecanismo não conectado</span></div><div class="notice"><b>Importante:</b> endereço de e-mail publicado na internet não significa autorização automática para campanhas. A ferramenta deverá registrar origem, finalidade e base legal, respeitar os termos das fontes e manter lista de oposição/descadastramento. Não haverá coleta indiscriminada nem disparo automático para listas raspadas.</div><div class="grid cols"><div class="card"><h3>Configurar pesquisa</h3><p class="hint">A interface está preparada; fontes e critérios serão definidos antes de ativar buscas.</p><div class="field"><label>Tipo de instituição</label><select><option>Hospitais e clínicas</option><option>Associações de pacientes</option><option>Organizações sociais</option><option>Instituições de saúde</option><option>Parceiros institucionais</option></select></div><div class="field"><label>Localidade ou abrangência</label><input placeholder="Ex.: São Paulo ou Brasil"></div><div class="field"><label>Finalidade da pesquisa</label><select><option>Relacionamento institucional</option><option>Parcerias e ações educativas</option><option>Outro — definir antes da coleta</option></select></div><button class="btn primary" onclick="alert('A pesquisa será ativada após escolha de fontes compatíveis, validação jurídica e configuração do servidor.')">Preparar pesquisa</button></div><div class="card"><h3>Critérios de segurança</h3><div class="list"><div class="listrow"><strong>Fonte e URL de origem</strong><span class="pill green">Obrigatório</span></div><div class="listrow"><strong>Data e finalidade da coleta</strong><span class="pill green">Obrigatório</span></div><div class="listrow"><strong>Base legal documentada</strong><span class="pill green">Obrigatório</span></div><div class="listrow"><strong>Lista de oposição e supressão</strong><span class="pill green">Obrigatório</span></div><div class="listrow"><strong>Revisão antes de campanhas</strong><span class="pill green">Obrigatório</span></div></div></div></div><div class="card" style="margin-top:16px"><h3>Resultados de pesquisa</h3><p class="hint">Nenhuma busca executada. Os contatos não serão adicionados automaticamente a listas de disparo.</p><div class="empty">Aguardando configuração das fontes e do banco.</div></div></section>
 <section class="section" id="email"><div class="heading"><div><div class="eyebrow">COMUNICAÇÃO DIRETA</div><h1>E-mail marketing</h1><p class="sub">Planejamento de campanhas, modelos, listas e indicadores de entrega.</p></div><span class="pill amber">Envio desativado</span></div><div class="notice">O painel poderá preparar campanhas, mas o envio só será liberado após integração com um provedor de e-mail, autenticação do domínio (SPF, DKIM e DMARC), revisão da lista e mecanismo de descadastramento. O volume gratuito depende do provedor contratado.</div><div class="grid modulegrid"><div class="card module"><div class="symbol">✉</div><h3>Campanhas</h3><p>Rascunhos, assunto, conteúdo, público e agendamento.</p><span class="pill blue">Estrutura prevista</span></div><div class="card module"><div class="symbol">▣</div><h3>Modelos</h3><p>Modelos institucionais e educativos reutilizáveis.</p><span class="pill blue">Estrutura prevista</span></div><div class="card module"><div class="symbol">↗</div><h3>Entrega e resultados</h3><p>Entregues, rejeitados, aberturas e descadastramentos, quando suportados pelo provedor.</p><span class="pill amber">Integração pendente</span></div></div><div class="card" style="margin-top:16px"><h3>Nova campanha (rascunho)</h3><div class="formgrid"><div class="field"><label>Nome interno</label><input placeholder="Ex.: Informativo sobre direitos do paciente"></div><div class="field"><label>Público</label><select><option>Selecione uma lista autorizada</option></select></div><div class="field"><label>Assunto</label><input placeholder="Assunto do e-mail"></div><div class="field"><label>Data prevista</label><input type="date"></div></div><div class="field"><label>Mensagem</label><textarea placeholder="Escreva o conteúdo da campanha"></textarea></div><button class="btn secondary" onclick="alert('Rascunhos serão salvos no banco após a instalação. Envio permanece bloqueado.')">Salvar rascunho (após instalação)</button></div></section>
