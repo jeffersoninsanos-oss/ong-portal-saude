@@ -54,6 +54,51 @@ body{background:linear-gradient(135deg,#f4f8ff,#f7fbff);color:var(--ink)}
 .modulegrid .card{border-top:3px solid #0874ed}
 .notice{border-radius:12px}
 @media(max-width:700px){.hero{padding:17px;gap:12px;min-height:120px}.hero-logo{width:65px;height:65px;flex-basis:65px}.hero-logo img{width:55px;height:55px}.hero-copy h1{font-size:18px}.hero-heart{display:none}.content{padding:17px 13px}}
+
+/* Refinamento visual — aproximação do dashboard de referência */
+:root{--navy:#092b67;--blue:#1769f5;--teal:#12b76a;--purple:#8054ed;--orange:#f59e0b;--pink:#ec4899;--bg:#f3f6fc}
+body{background:#f3f6fc}
+.sidebar{width:276px;background:linear-gradient(165deg,#09265d 0%,#103f91 58%,#075b83 100%);padding:25px 17px}
+.main{margin-left:276px;width:calc(100% - 276px)}
+.brand{padding:0 9px 24px;gap:13px}
+.brandmark{width:52px;height:52px;border-radius:15px;padding:3px}
+.brand strong{font-size:14px;letter-spacing:.35px}
+.navlabel{margin:27px 12px 10px;color:#8fb4e8;font-size:9px;letter-spacing:1.6px}
+.nav button{font-size:13px;padding:12px 13px;margin:3px 0;border-radius:11px;transition:all .18s}
+.nav button.active{background:linear-gradient(100deg,#287df8,#1556ce);box-shadow:0 7px 18px #001c503d}
+.nav button:hover{transform:translateX(2px)}
+.topbar{height:76px;padding:0 36px;background:#fff}
+.content{max-width:1600px;padding:28px 36px}
+.hero{min-height:174px;padding:25px 32px;border:0;background:linear-gradient(105deg,#dcecff 0%,#eff6ff 48%,#dcf8e9 100%);box-shadow:0 10px 28px #164a8c12}
+.hero-logo{width:112px;height:112px;flex-basis:112px;border-radius:25px}
+.hero-logo img{width:96px;height:96px}
+.hero-copy span{font-size:10px;letter-spacing:2px}
+.hero-copy h1{font-size:29px;letter-spacing:-.6px}
+.hero-copy p{font-size:13px}
+.hero-heart{width:145px;height:112px;border-radius:22px;background:linear-gradient(145deg,#fff,#f0f7ff);font-size:49px}
+.heading{margin-bottom:20px}
+.heading h1{font-size:26px;letter-spacing:-.5px}
+.stats{gap:18px;margin-bottom:20px}
+.stats .card{min-height:150px;padding:21px 22px;border-radius:17px;box-shadow:0 10px 24px #09265d20}
+.stats .card:after{content:"";position:absolute;width:115px;height:115px;border:1px solid #ffffff25;border-radius:50%;right:-38px;bottom:-62px;box-shadow:0 0 0 15px #ffffff0b,0 0 0 30px #ffffff08}
+.stats .statlabel{font-size:12px;font-weight:600}
+.stats .statvalue{font-size:34px;margin:13px 0 7px}
+.stats .statfoot{font-size:11px}
+.stats .staticon{width:42px;height:42px;font-size:20px;border-radius:14px}
+.card{border:1px solid #e7edf7;border-radius:17px;padding:21px;box-shadow:0 6px 22px #102d5d0a}
+.card h3{font-size:15px}
+.card p.hint{font-size:11px}
+.cols{gap:18px}
+.listrow{padding:14px 0}
+.pill{padding:6px 10px}
+.modulegrid{gap:18px}
+.modulegrid .card{border-top:0;position:relative;overflow:hidden}
+.modulegrid .card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(#1769f5,#12b76a)}
+.module .symbol{width:46px;height:46px;border-radius:14px;background:#eaf2ff;color:#1769f5;display:grid;place-items:center;font-size:23px}
+.notice{padding:14px 17px;border-radius:13px}
+@media(max-width:1000px){.content{padding:22px}.main{margin-left:276px;width:calc(100% - 276px)}}
+@media(max-width:700px){.main{margin:0;width:100%}.content{padding:17px 13px}.topbar{padding:0 16px}.hero{padding:17px;min-height:120px}.hero-logo{width:65px;height:65px;flex-basis:65px;border-radius:17px}.hero-logo img{width:57px;height:57px}.hero-copy h1{font-size:18px}.stats .card{min-height:124px;padding:15px}.stats .statvalue{font-size:25px}}
+
 </style></head>
 <body><div class="shell">
 <aside class="sidebar" id="sidebar"><div class="brand"><img class="brandmark" src="../assets/fotos/Code_Generated_Image.png" alt="Logo ONG Portal Saúde"><div><strong>PORTAL SAÚDE</strong><small>Central de Marketing</small></div></div>
@@ -78,6 +123,19 @@ body{background:linear-gradient(135deg,#f4f8ff,#f7fbff);color:var(--ink)}
 <section class="section active" id="overview"><div class="hero"><div class="hero-logo"><img src="../assets/fotos/Code_Generated_Image.png" alt="Logo ONG Portal Saúde"></div><div class="hero-copy"><span>ONG PORTAL SAÚDE</span><h1>Juntos por uma saúde mais justa!</h1><p>Informação • Direitos • Apoio</p></div><div class="hero-heart">♥<small>Saúde e acolhimento</small></div></div><div class="heading"><div><div class="eyebrow">CENTRAL DE MARKETING</div><h1>Visão geral</h1><p class="sub">Acompanhe os módulos e organize as ações de comunicação da ONG Portal Saúde.</p></div><span class="pill amber">Dados demonstrativos</span></div>
 <div class="notice"><b>Ambiente de preparação:</b> os indicadores abaixo são exemplos visuais, não representam resultados reais. Nenhum contato será importado ou e-mail enviado antes da configuração e validação das integrações.</div>
 <div class="grid stats"><div class="card"><span class="staticon">♙</span><div class="statlabel">Contatos cadastrados</div><div class="statvalue">—</div><div class="statfoot">Aguardando banco de dados</div></div><div class="card"><span class="staticon">✉</span><div class="statlabel">Campanhas enviadas</div><div class="statvalue">—</div><div class="statfoot">Envios ainda não habilitados</div></div><div class="card"><span class="staticon">◎</span><div class="statlabel">Canais conectados</div><div class="statvalue">0/4</div><div class="statfoot">Integrações pendentes</div></div><div class="card"><span class="staticon">▤</span><div class="statlabel">Conteúdos planejados</div><div class="statvalue">—</div><div class="statfoot">Calendário ainda não configurado</div></div></div>
+<div class="grid cols" style="margin-bottom:18px">
+<div class="card"><h3>Visão de desempenho</h3><p class="hint">Painel de indicadores que será alimentado pelas integrações</p>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:12px;height:150px;padding:12px 5px 0;border-bottom:1px solid #e8eef7">
+<div style="flex:1;height:42%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#8b5cf6,#c4b5fd);opacity:.88"></div><div style="flex:1;height:65%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#1769f5,#93c5fd);opacity:.88"></div><div style="flex:1;height:52%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#16b978,#a7f3d0);opacity:.88"></div><div style="flex:1;height:82%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#8b5cf6,#c4b5fd);opacity:.88"></div><div style="flex:1;height:61%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#1769f5,#93c5fd);opacity:.88"></div><div style="flex:1;height:94%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#16b978,#a7f3d0);opacity:.88"></div><div style="flex:1;height:72%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#8b5cf6,#c4b5fd);opacity:.88"></div><div style="flex:1;height:100%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#1769f5,#93c5fd);opacity:.88"></div><div style="flex:1;height:76%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#16b978,#a7f3d0);opacity:.88"></div><div style="flex:1;height:88%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#8b5cf6,#c4b5fd);opacity:.88"></div><div style="flex:1;height:59%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#1769f5,#93c5fd);opacity:.88"></div><div style="flex:1;height:91%;border-radius:7px 7px 2px 2px;background:linear-gradient(180deg,#16b978,#a7f3d0);opacity:.88"></div>
+</div><div style="display:flex;justify-content:space-between;color:#8392aa;font-size:10px;margin-top:9px"><span>Jan</span><span>Fev</span><span>Mar</span><span>Abr</span><span>Mai</span><span>Jun</span><span>Jul</span><span>Ago</span><span>Set</span><span>Out</span><span>Nov</span><span>Dez</span></div>
+<p class="hint" style="margin:12px 0 0">Gráfico ilustrativo — aguardando dados reais do Google e das plataformas.</p></div>
+<div class="card"><h3>Atividades recentes</h3><p class="hint">Ações e eventos do ambiente administrativo</p>
+<div class="list">
+<div class="listrow"><div><strong>Estrutura do painel preparada</strong><small>Interface e módulos iniciais</small></div><span class="pill green">Concluído</span></div>
+<div class="listrow"><div><strong>Integração Instagram / Meta</strong><small>Bot existente no cPanel</small></div><span class="pill amber">Pendente</span></div>
+<div class="listrow"><div><strong>Google Analytics e Search Console</strong><small>Conexão de métricas</small></div><span class="pill amber">Pendente</span></div>
+<div class="listrow"><div><strong>Banco de dados e autenticação</strong><small>Instalação na hospedagem</small></div><span class="pill amber">Pendente</span></div>
+</div></div></div>
 <div class="grid cols"><div class="card"><h3>Etapas para colocar o painel em funcionamento</h3><p class="hint">Acompanhe o que falta para ativar o ambiente.</p><div class="list"><div class="listrow"><div><strong>Estrutura visual e navegação</strong><small>Painel e módulos iniciais</small></div><span class="pill green">Preparado</span></div><div class="listrow"><div><strong>Hospedagem TargetHost</strong><small>Confirmar plano, PHP, MySQL e subdomínio</small></div><span class="pill amber">Pendente</span></div><div class="listrow"><div><strong>Banco de dados e acesso seguro</strong><small>Criar tabelas, login e permissões</small></div><span class="pill amber">Pendente</span></div><div class="listrow"><div><strong>Bot do Instagram e Meta</strong><small>Vincular bot existente do cPanel após configurar Meta</small></div><span class="pill amber">Pendente</span></div><div class="listrow"><div><strong>Google e serviço de e-mail</strong><small>Tokens, autorização e testes de envio</small></div><span class="pill amber">Pendente</span></div></div></div>
 <div class="card"><h3>Módulos do painel</h3><p class="hint">Estrutura prevista para a operação.</p><div class="list"><div class="listrow"><strong>Contatos e captação</strong><span class="pill blue">Preparado</span></div><div class="listrow"><strong>Busca de contatos</strong><span class="pill blue">Preparado</span></div><div class="listrow"><strong>E-mail marketing</strong><span class="pill blue">Preparado</span></div><div class="listrow"><strong>Redes sociais</strong><span class="pill amber">Integração pendente</span></div><div class="listrow"><strong>Google e relatórios</strong><span class="pill amber">Integração pendente</span></div></div></div></div></section>
 <section class="section" id="contacts"><div class="heading"><div><div class="eyebrow">RELACIONAMENTO</div><h1>Contatos e captação</h1><p class="sub">Organização de pessoas que solicitaram informações ou autorizaram comunicações.</p></div><button class="btn primary" onclick="showForm('contactform')">+ Novo contato</button></div><div class="notice">A base real será armazenada no banco protegido da hospedagem. Este protótipo não grava dados pessoais.</div><div class="card" id="contactform" style="display:none"><h3>Novo contato (prévia do formulário)</h3><div class="formgrid"><div class="field"><label>Nome</label><input placeholder="Nome completo"></div><div class="field"><label>E-mail</label><input type="email" placeholder="email@exemplo.com"></div><div class="field"><label>Categoria</label><select><option>Selecione</option><option>Paciente / familiar</option><option>Instituição</option><option>Clínica / hospital</option><option>Associação</option><option>Empresa</option></select></div><div class="field"><label>Origem</label><select><option>Formulário do site</option><option>Cadastro manual</option><option>Importação autorizada</option></select></div></div><div class="field"><label>Registro de autorização / base legal</label><textarea placeholder="Registrar como o contato foi obtido e a justificativa para a comunicação"></textarea></div><div class="actions"><button class="btn primary" onclick="alert('Formulário demonstrativo. O cadastro será habilitado após banco de dados e controles LGPD.')">Salvar quando ativado</button><button class="btn secondary" onclick="showForm('contactform')">Fechar</button></div></div><div class="card"><h3>Base de contatos</h3><p class="hint">Os registros aparecerão aqui após a conexão do banco de dados.</p><div class="empty">Nenhum contato carregado. Banco de dados ainda não conectado.</div></div></section>
